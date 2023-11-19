@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta name="theme-color" content="#176b87"/>
+
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="icon" href="./favicon.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <title>Restaurant Apps Starter Project</title>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+    <header>
+      <!--Ini adalah navigasi utama-->
+      <div class="navigasi_atas">
+        <div class="logo">
+          <h1>FindResto</h1>
+        </div>
+        <div class="app-bar__menu">
+          <button id="hamburger">☰</button>
+        </div>
+        <nav id="drawer" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#/home">Home</a></li>
+            <li class="nav__item"><a href="#/favorit">Favorit</a></li>
+            <li class="nav__item"><a href="https://www.linkedin.com/in/miftahfauzy" target="_blank" rel="noopener">About Us</a></li>
+          </ul>
+        </nav>
+        <!--Ini adalah search-bar di bawah navigasi utama-->
+      </div>
+      <div class="hero" id="heroContent">
+        <h1 class="hero_title">Hai Kamu, Mau Makan Dimana?</h1>
+        <form class="hero_element">
+          <input class="searchResto" placeholder="Cari Restoran" />
+          <button class="searchButton">Search</button>
+        </form>
+      </div>
+    </header>
+    <main id="mainContent" tabindex="0"></main>
+    <footer>
+      <p>Copyright© 2023 - FindResto</p>
+    </footer>
+  </body>
+</html>

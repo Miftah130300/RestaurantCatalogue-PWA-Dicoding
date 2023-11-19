@@ -1,0 +1,379 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Body and HTML */
+body, html, main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  background-color: #64ccc5;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  min-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('../public/images/hero-image_4.jpg');
+  background-position: center;
+  background-color: green;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+}
+
+header .hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation */
+.navigasi_atas {
+  z-index: 2;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.logo {
+  font-weight: 300;
+  padding: 5px 10px;
+  color: white;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+}
+
+nav {
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+  width: 100%;
+  font-size: large;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 20px 40px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  min-width: 44px;
+  min-height: 44px;
+  width: 200px;
+  font-size: large;
+}
+
+#hamburger {
+  display: none;
+  font-size: 32px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+#drawer a:hover {
+  color: white;
+  background-color: #176b87;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero_title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero_element {
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+  max-width: 400px;
+  width: 100%;
+}
+
+.searchResto {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchButton {
+  padding: 10px;
+  border-radius: 15px;
+  border: 0;
+  margin-top: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #176b87;
+  color: white;
+}
+
+.searchButton:hover {
+  background-color: white;
+  color: #176b87;
+}
+
+
+/* Main Section */
+.result {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 20px;
+}
+
+#restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.restoList {
+  display: flex;
+  grid-column: 3;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin: 20px;
+  margin-top: 0;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*
+  Main Content
+*/
+ 
+main {
+  padding: 32px;
+  flex: 1;
+}
+ 
+.listContent {
+  margin: 0 auto;
+  min-height: 100%;
+}
+ 
+.listContent .content_result {
+  font-weight: normal;
+}
+ 
+ 
+/*
+  Restos
+*/
+
+.listResto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    z-index: 1;
+  }
+
+.restos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 32px 0;
+  z-index: 1;
+}
+ 
+ 
+/*
+  Resto Item
+*/
+ 
+.resto-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+ 
+.resto-item__header {
+  position: relative;
+}
+ 
+.resto-item .resto-item__header #resto-item__header__poster {
+  width: 100%;
+}
+ 
+.resto-item .resto-item__header .resto-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+ 
+.resto-item .resto-item__header .resto-item__header__rating .resto-item__header__rating__score {
+  margin-left: 10px;
+}
+ 
+.resto-item .resto-item__content {
+  padding: 16px;
+}
+ 
+.resto-item .resto-item__content h3 {
+  margin: 0 0 10px 0;
+}
+ 
+.resto-item .resto-item__content h3 a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+}
+ 
+.resto-item .resto-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+/*
+  Resto
+*/
+ 
+#detailResto {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  gap: 18px 16px;
+}
+ 
+#detailResto .resto__poster {
+  width: 100%;
+  max-width: 400px;
+}
+ 
+#detailResto .resto__info h4 {
+  margin: 8px 0;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #176b87;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Default style for images */
+.fan-art-club {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+/* Footer Style */
+footer {
+  background-color: #176b87;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer Text Style */
+footer p {
+  font-size: 12px;
+  color: white;
+}
