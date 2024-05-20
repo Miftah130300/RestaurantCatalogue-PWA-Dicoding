@@ -2,7 +2,6 @@
 @media screen and (max-width: 480px) {
   header {
     min-height: 350px;
-    background-image: url('../../dist/images/hero-image_4-small.jpg');
   }
   
   .hero_title {
@@ -45,10 +44,8 @@
   }
 
   #hamburger {
-    display: inline-block;
+    display: flex;
     justify-content: flex-end;
-    min-width: 44px;
-    min-height: 44px;
   }
 
   #drawer{
@@ -93,37 +90,18 @@
   }
 
   .listResto {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    margin: 32px 0;
-    z-index: 1;
-  }
-
-  .restos {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
   margin: 32px 0;
   z-index: 1;
 }
-
-.resto-item .resto-item__content h3 a {
-  color: black;
-  text-decoration: none;
-}
-
-.resto__image {
-      width: 100%;
-      padding: 5px;
-    }
 }
 
 /* konfigurasi untuk media baru */
 @media screen and (max-width: 768px) {
   header {
     min-height: 350px;
-    background-image: url('../../dist/images/hero-image_4-large.jpg');
   }
   
   .hero_title {
@@ -167,8 +145,6 @@
     display: flex;
     justify-content: flex-end;
     left: 400px;
-    min-width: 44px;
-    min-height: 44px;
   }
   
   #drawer{
@@ -220,26 +196,12 @@
     z-index: 1;
   }
 
-  .restos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    margin: 32px 0;
-    z-index: 1;
-  }
-
-  .resto-item .resto-item__content h3 a {
-  color: black;
-  text-decoration: none;
-}
-
 }
 
 /* Media Queries for Larger Screens (Tetapkan sesuai kebutuhan Anda) */
 @media screen and (min-width: 1024px) {
   header {
     min-height: 550px;
-    background-image: url('../public/images/hero-image_4.jpg');
   }
   
   .hero_title {
