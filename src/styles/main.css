@@ -8,15 +8,12 @@
 /* Skip Link */
 .skip-link {
   position: absolute;
-  top: -50px;
+  top: -40px;
   left: 0;
   background-color: #bf1722;
   color: white;
   padding: 8px;
   z-index: 100;
-  display: inline-block;
-  min-height: 44px;
-  min-width: 44px;
 }
 
 .skip-link:focus {
@@ -124,8 +121,6 @@ nav a {
   text-decoration: none;
   background-color: transparent;
   color: white;
-  min-width: 44px;
-  min-height: 44px;
 }
 
 #drawer a:hover {
@@ -235,16 +230,8 @@ main {
 /*
   Restos
 */
-
+ 
 .listResto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-    margin: 32px 0;
-    z-index: 1;
-  }
-
-.restos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
@@ -268,7 +255,7 @@ main {
   position: relative;
 }
  
-.resto-item .resto-item__header #resto-item__header__poster {
+.resto-item .resto-item__header .resto-item__header__poster {
   width: 100%;
 }
  
@@ -297,9 +284,6 @@ main {
 .resto-item .resto-item__content h3 a {
   color: black;
   text-decoration: none;
-  display: inline-block;
-  min-height: 44px;
-  min-width: 44px;
 }
  
 .resto-item .resto-item__content p {
@@ -314,19 +298,21 @@ main {
   Resto
 */
  
-#detailResto {
+#detail_resto {
+  margin: 0 auto;
   width: 100%;
   max-width: 800px;
   display: grid;
+  grid-template-columns: 1fr;
   gap: 18px 16px;
 }
  
-#detailResto .resto__poster {
+#detail_resto .resto__poster {
   width: 100%;
   max-width: 400px;
 }
  
-#detailResto .resto__info h4 {
+#detail_resto .resto__info h4 {
   margin: 8px 0;
 }
 
@@ -339,7 +325,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #176b87;
+  background-color: #db0000;
   
   position: fixed;
   bottom: 16px;

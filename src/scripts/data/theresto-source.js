@@ -7,10 +7,10 @@ class TheRestoSource {
     return responseJson.restaurants
   }
 
-  static async detailRestaurant (id) {
+  // eslint-disable-next-line space-before-function-paren
+  static async detailResto(id) {
     const response = await fetch(API_ENDPOINT.DETAIL(id))
-    const responseJson = await response.json()
-    return responseJson.restaurant
+    return response.json()
   }
 }
 

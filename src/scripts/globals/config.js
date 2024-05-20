@@ -4,8 +4,7 @@ const CONFIG = {
   DEFAULT_LANGUAGE: 'en-us',
   DATABASE_NAME: 'restaurant-catalogue-database',
   DATABASE_VERSION: 1,
-  OBJECT_STORE_NAME: 'restaurant',
-  CACHE_NAME: new Date().toISOString()
+  OBJECT_STORE_NAME: 'restaurant'
 }
 
 export default CONFIG
